@@ -1,0 +1,23 @@
+<%- include('partials/header.ejs') %>
+
+<h1>
+	list of toilets here
+</h1>
+<div class="row text-center" style="display:flex; flex-wrap: wrap;">
+	<% toilets.forEach(function(i){ %>
+		<div class="col-md-4 col-sm-6">	
+			<img src="<%=i.image%>" class="rounded" width="100%">
+			<div class="caption">
+				<%= i.name %>	
+			</div>
+			<a href="/toilets/<%=i._id%>"> 
+				<button type="button" class="btn btn-primary">
+					View More
+				</button>
+			</a>
+		</div>
+	<% }); %>
+</div>
+
+
+<%- include('partials/footer.ejs') %>

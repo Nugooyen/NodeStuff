@@ -1,0 +1,27 @@
+<html>
+	<head>
+		
+	</head>
+	<body>
+	<center>
+		<% var a = 1%>
+		<% if(a==1){ %>
+		<h1>YES</h1>
+		<%= a %>
+		<% } %>
+		
+		<h1>
+			Search a movie plz
+		</h1>
+		
+		<form action="/posturl" method="post" >
+			<input type="text" name="searchterm" placeholder="search here">
+			<button>
+				submit
+			</button>
+		</form>
+		
+	</center>	
+		
+	</body>
+</html>

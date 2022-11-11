@@ -1,0 +1,23 @@
+<%- include('partials/header.ejs') %>
+<div class="container">
+	<form action="/toilets/create" method="post">
+	  <div class="form-group">
+		<label for="exampleFormControlInput1">Toilet Location/Name</label>
+		<input name="toiletName" class="form-control" id="exampleFormControlInput1" placeholder="e.g. bathroom at UCI Student Center">
+	  </div>
+		
+	  <div class="form-group">
+		<label for="exampleFormControlInput1">Toilet Image URL</label>
+		<input name="toiletImg" class="form-control" id="exampleFormControlInput1" >
+	  </div>
+		
+	  <div class="form-group">
+		<label for="exampleFormControlTextarea1">Toilet Review</label>
+		<textarea name="toiletBody" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+	  </div>
+	  <button type="submit" class="btn btn-primary">Submit</button>
+	</form>
+</div>
+
+
+<%- include('partials/footer.ejs') %>
